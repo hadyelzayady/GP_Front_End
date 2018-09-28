@@ -1,0 +1,25 @@
+.sidenavLayout{
+    height: 70%;
+    width: 230px;
+    border: solid 1px #dfdfdf;
+    position: absolute;
+    top: 100px;
+    background: #f1f1f1eb;
+    overflow: overlay;
+}
+.cat1{
+    background-image:url('../assets/img.png');
+ 
+    background-repeat:no-repeat;
+    height: 30px;
+    width: 30px;
+    background-size:cover;
+}
+.elem1{
+    background-image:url('../assets/img.png');
+    background-repeat:no-repeat;
+    height: 50px;
+    width: 50px;
+    background-size:cover;
+    margin: 8px;
+}

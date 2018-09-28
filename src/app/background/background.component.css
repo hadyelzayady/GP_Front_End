@@ -1,0 +1,34 @@
+.background{
+    position: absolute;
+     top: 0px; 
+     left: 0px; 
+     background-image: url("../assets/cell.svg");
+      background-size: 21px; 
+      width: 100%; 
+      height: 100%; 
+      z-index: -1; 
+      background-position: 0px 0px; 
+      perspective: 1000px; 
+      backface-visibility: hidden; 
+      transform: translateZ(0px);
+
+}
+.workArea{
+    overflow: hidden;
+    position: absolute;
+    height: 100%;
+    width:100%;
+  
+}
+.elem1{
+    padding: 5%; 
+    border: solid; 
+    position: fixed;
+}
+.arduino{
+    border: solid lightblue 2px ;
+    padding: 3px;
+        width: 40%;
+
+            
+}
