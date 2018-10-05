@@ -20,19 +20,18 @@
     width:100%;
   
 }
-
 .arduino{
     
-        width: 30%;
-        height: 30%;
+    width: 30%;
+    height: 30%;
 }
 .overlay_for_element{
-    width: 100%;
-    position: absolute;
-    height: 74%;
-    top: 13%;
-    background-color: transparent;
-    z-index: 1;
+width: 100%;
+position: absolute;
+height: 74%;
+top: 13%;
+background-color: transparent;
+z-index: 1;
 }
 .pic_elem_ard{
 position: absolute;
