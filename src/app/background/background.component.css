@@ -20,15 +20,29 @@
     width:100%;
   
 }
-.elem1{
-    padding: 5%; 
-    border: solid; 
-    position: fixed;
-}
-.arduino{
-    border: solid lightblue 2px ;
-    padding: 3px;
-        width: 40%;
 
-            
+.arduino{
+    
+        width: 30%;
+        height: 30%;
 }
+.overlay_for_element{
+    width: 100%;
+    position: absolute;
+    height: 74%;
+    top: 13%;
+    background-color: transparent;
+    z-index: 1;
+}
+.pic_elem_ard{
+position: absolute;
+height: 100%;
+width: 100%;
+z-index: 0;
+}
+/* #draggable {
+    width: 150px;
+    height: 150px;
+    padding: 0.5em;
+    background: #eee;
+  } */
