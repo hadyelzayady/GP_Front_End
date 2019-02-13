@@ -12,6 +12,8 @@
   <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
   <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+  <script src="../assets/two.min.js"></script>
+
   <script>
     $(function () {
       $(".elements").draggable();
@@ -20,6 +22,34 @@
 </head>
 
 <body>
+  <div id="myCanvas"></div>
+
+  <script type="text/javascript">
+    var elem = document.getElementById('myCanvas');
+    var two = new Two({
+      type: Two.Types.svg,
+      fullscreen: true,
+      autostart: true
+    }).appendTo(elem);
+    function drawline(event) {
+      $(".pin").one("click", function (e) {
+        var line = two.makeLine(event.clientX, event.clientY, e.clientX, e.clientY);
+        line.linewidth = 10;
+        line.stroke = "rgba(255, 0, 0, 0.5)";
+        two.update();
+      });
+
+    }
+    function getRandomIntInclusive(min, max) {
+      min = Math.ceil(min);
+      max = Math.floor(max);
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
+
+
+
+  </script>
   <app-root></app-root>
 
 </body>
